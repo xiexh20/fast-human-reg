@@ -20,6 +20,11 @@ SMPL body model, please download SMPL family models following [this instruction]
 ```shell
 python demo.py dataset.file=$PWD/demo-kinect-pc.ply dataset.smpl_root=<your_smpl_model_root>
 ```
+Note that the model is trained with the [ProciGen](https://virtualhumans.mpi-inf.mpg.de/procigen-hdm/) dataset, hence the human (head to foot vector) aligns with the +y axis, see the figure of the demo point cloud below. 
+If your data has a different head orientation, please rotate them before doing registration. 
+<p align="left">
+<img src="data/default-orientation.png" alt="teaser" width="50%"/>
+</p>
 
 ## Citation
 If you use our code, please cite:
