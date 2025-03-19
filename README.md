@@ -4,7 +4,7 @@ It is based on a feedforward autoencoder ([CorrAE](https://virtualhumans.mpi-inf
 
 
 ## Dependency
-The code is tested on `torch=1.12.1+cu121, cuda12.1, debian11`. We recommend using anaconda environment:
+The code is tested on `torch=1.12.1+cu121, cuda12.1, debian11`. We recommend using conda environment:
 ```shell
 conda create -n fast-reg python=3.8
 conda activate fast-reg 
@@ -18,7 +18,7 @@ SMPL body model, please download SMPL family models following [this instruction]
 
 ## Example Usage
 ```shell
-python demo.py dataset.file=$PWD/demo-kinect-pc.ply dataset.smpl_root=<your_smpl_model_root>
+python demo.py dataset.file=$PWD/data/demo-kinect-pc.ply dataset.smpl_root=<your_smpl_model_root>
 ```
 Note that the model is trained with the [ProciGen](https://virtualhumans.mpi-inf.mpg.de/procigen-hdm/) dataset, hence the human (head to foot vector) aligns with the +y axis, see the figure of the demo point cloud below. 
 If your data has a different head orientation, please rotate them before doing registration. 
