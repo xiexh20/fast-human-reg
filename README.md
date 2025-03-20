@@ -1,6 +1,7 @@
 # fast-human-reg
-A library for fast human registration. 
-It is based on a feedforward autoencoder ([CorrAE](https://virtualhumans.mpi-inf.mpg.de/InterTrack/)) and [fast SMPL fitter](https://github.com/isarandi/smplfitter).
+A library for fast human registration. It achieves a speed of **0.2s/example** with bs=1, and can be 10 times faster if you batchfy it!
+
+The pipeline is based on a feedforward autoencoder ([CorrAE](https://virtualhumans.mpi-inf.mpg.de/InterTrack/)) and [fast SMPL fitter](https://github.com/isarandi/smplfitter).
 
 
 ## Dependency
