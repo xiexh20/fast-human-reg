@@ -27,6 +27,21 @@ If your data has a different head orientation, please rotate them before doing r
 <img src="data/default-orientation.png" alt="teaser" width="50%"/>
 </p>
 
+## Performance
+Our fast registration pipeline achieves similar accuracy as NICP, but much faster, see results below:
+
+BEHAVE kinect point clouds:
+| Method | v2v(cm) | Runtime(s)|
+|:-------|:-------:|:---------:|
+| NICP   |   4.12  |   48.62   | 
+| Ours   |   5.22  |    0.24   | 
+
+MGN human scans: 
+| Method | v2v(cm) | Runtime(s)|
+|:-------|:-------:|:---------:|
+| NICP   |   5.07  |   46.46   | 
+| Ours   |   6.25  |    0.24   | 
+
 ## Citation
 If you use our code, please cite:
 ```
