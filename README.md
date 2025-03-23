@@ -28,7 +28,7 @@ If your data has a different head orientation, please rotate them before doing r
 </p>
 
 ## Performance
-Our fast registration pipeline achieves similar accuracy as NICP, but much faster, see results below:
+Our fast registration pipeline achieves similar accuracy as NICP, but much faster, see results below (bs=1):
 
 BEHAVE kinect point clouds:
 | Method | v2v(cm) | Runtime(s)|
